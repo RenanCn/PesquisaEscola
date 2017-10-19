@@ -1,0 +1,9 @@
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\bin\Debug\MineraçãoEscola.exe.config
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\bin\Debug\MineraçãoEscola.exe
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\bin\Debug\MineraçãoEscola.pdb
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.csprojResolveAssemblyReference.cache
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.Form1.resources
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.Properties.Resources.resources
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.csproj.GenerateResource.Cache
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.exe
+c:\users\renan\documents\visual studio 2017\Projects\MineraçãoEscola\MineraçãoEscola\obj\Debug\MineraçãoEscola.pdb

@@ -1,0 +1,1 @@
+&estado=AC&energiaInexistente=on&aguaInexistente=on#&estado=BA&energiaInexistente=on&aguaInexistente=on#&estado=MG&energiaInexistente=on&aguaInexistente=on#&estado=PE&energiaInexistente=on&aguaInexistente=on#&estado=RO&energiaInexistente=on&aguaInexistente=on
