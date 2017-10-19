@@ -178,9 +178,9 @@ namespace MineraçãoEscola
 
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                MessageBox.Show(e);
+                MessageBox.Show(ex.ToString());
             }
 
             MessageBox.Show(ExecutarCMD("cd " + label5.Text + " && py pyMineraçãoEscola.py"), "Relatório");
