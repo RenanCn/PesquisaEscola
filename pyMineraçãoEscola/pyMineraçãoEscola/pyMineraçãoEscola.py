@@ -63,28 +63,3 @@ ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%', shadow=False, 
 ax1.axis('equal')  
 
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
-
-
-i=0
-for x in resp[1]:
-    print(x['nome'])
-    print('Cidade:' + x['cidade'] + ' \nEstado:'+  x['estado'] + ' \nRegião:' + x['regiao'])
-    print('-------------------------------------------')"""
