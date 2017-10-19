@@ -94,87 +94,93 @@ namespace MineraçãoEscola
         {
             string arquivo = @"" + label5.Text + @"\csFiltro.txt";
 
-            using (StreamWriter writer = new StreamWriter(arquivo, false))
+            try {
+                using (StreamWriter writer = new StreamWriter(arquivo, false))
+                {
+                    string check = "";
+
+                    if (checkBox1.Checked == true)
+                    {
+                        check = check + "&energiaInexistente=on";
+                    }
+
+                    if (checkBox2.Checked == true)
+                    {
+                        check = check + "&aguaInexistente=on";
+                    }
+
+                    if (checkBox3.Checked == true)
+                    {
+                        check = check + "&esgotoInexistente=on";
+                    }
+
+                    if (checkBox4.Checked == true)
+                    {
+                        check = check + "&laboratorioCiencias=on";
+                    }
+
+                    if (checkBox5.Checked == true)
+                    {
+                        check = check + "&laboratorioInformatica=on";
+                    }
+
+                    if (checkBox6.Checked == true)
+                    {
+                        check = check + "&biblioteca=on";
+                    }
+
+                    /**************************/
+
+                    if (comboBox1.Text == "" || comboBox1.Text == "Brasil")
+                    {
+                        writer.Write("&Brasil" + check + "#");
+                    }
+                    else
+                    {
+                        writer.Write("&estado=" + comboBox1.Text + check + "#");
+                    }
+
+                    if (comboBox2.Text == "" || comboBox2.Text == "Brasil")
+                    {
+                        writer.Write("&Brasil" + check + "#");
+                    }
+                    else
+                    {
+                        writer.Write("&estado=" + comboBox2.Text + check + "#");
+                    }
+
+                    if (comboBox3.Text == "" || comboBox3.Text == "Brasil")
+                    {
+                        writer.Write("&Brasil" + check + "#");
+                    }
+                    else
+                    {
+                        writer.Write("&estado=" + comboBox3.Text + check + "#");
+                    }
+
+                    if (comboBox4.Text == "" || comboBox4.Text == "Brasil")
+                    {
+                        writer.Write("&Brasil" + check + "#");
+                    }
+                    else
+                    {
+                        writer.Write("&estado=" + comboBox4.Text + check + "#");
+                    }
+
+                    if (comboBox5.Text == "" || comboBox5.Text == "Brasil")
+                    {
+                        writer.Write("&Brasil" + check);
+                    }
+                    else
+                    {
+                        writer.Write("&estado=" + comboBox5.Text + check);
+                    }
+
+                }
+            }
+            catch (Exception e)
             {
-                string check = "";
-
-                if (checkBox1.Checked == true)
-                {
-                    check = check + "&energiaInexistente=on";
-                }
-
-                if (checkBox2.Checked == true)
-                {
-                    check = check + "&aguaInexistente=on";
-                }
-
-                if (checkBox3.Checked == true)
-                {
-                    check = check + "&esgotoInexistente=on";
-                }
-
-                if (checkBox4.Checked == true)
-                {
-                    check = check + "&laboratorioCiencias=on";
-                }
-
-                if (checkBox5.Checked == true)
-                {
-                    check = check + "&laboratorioInformatica=on";
-                }
-
-                if (checkBox6.Checked == true)
-                {
-                    check = check + "&biblioteca=on";
-                }
-                
-                /**************************/
-
-                if (comboBox1.Text == "" || comboBox1.Text == "Brasil")
-                {
-                    writer.Write("&Brasil" + check + "#");
-                }
-                else
-                {
-                    writer.Write("&estado=" + comboBox1.Text + check + "#");
-                }
-
-                if (comboBox2.Text == "" || comboBox2.Text == "Brasil")
-                {
-                    writer.Write("&Brasil" + check + "#");
-                }
-                else
-                {
-                    writer.Write("&estado=" + comboBox2.Text + check + "#");
-                }
-
-                if (comboBox3.Text == "" || comboBox3.Text == "Brasil")
-                {
-                    writer.Write("&Brasil" + check + "#");
-                }
-                else
-                {
-                    writer.Write("&estado=" + comboBox3.Text + check + "#");
-                }
-
-                if (comboBox4.Text == "" || comboBox4.Text == "Brasil")
-                {
-                    writer.Write("&Brasil" + check + "#");
-                }
-                else
-                {
-                    writer.Write("&estado=" + comboBox4.Text + check + "#");
-                }
-
-                if (comboBox5.Text == "" || comboBox5.Text == "Brasil")
-                {
-                    writer.Write("&Brasil" + check);
-                }
-                else
-                {
-                    writer.Write("&estado=" + comboBox5.Text + check);
-                }
-
+                MessageBox.Show(e);
             }
 
             MessageBox.Show(ExecutarCMD("cd " + label5.Text + " && py pyMineraçãoEscola.py"), "Relatório");
